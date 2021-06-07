@@ -4,7 +4,13 @@ from test_models.customer import Customer
 
 class TestEasyRandom:
 
-    def test_return_random_values(self):
+    def test_return_random_values_for_string(self):
         data = next_object(Customer)
 
-        assert data.name is not None and data.name.strip() is not ""
+        assert data.name.strip() != ""
+
+    def test_return_random_values_for_int(self):
+        data = next_object(Customer)
+
+        assert data.age != 0
+

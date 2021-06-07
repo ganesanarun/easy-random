@@ -1,5 +1,6 @@
 object_map = {
-    'str': 'random-value'
+    'str': 'random-value',
+    'int': 7
 }
 
 

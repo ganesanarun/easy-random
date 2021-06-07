@@ -1,2 +1,3 @@
 class Customer:
-    name: str = None
+    name: str = ""
+    age: int = 0
